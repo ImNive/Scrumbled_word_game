@@ -1,4 +1,4 @@
-console.log("✅ Script is connected!");
+console.log("Script is connected!");
 const homePage = document.getElementById("home-page");
 const gamePage = document.getElementById("game-page");
 const endPage = document.getElementById("end-page");
@@ -48,7 +48,8 @@ async function getWordFromDictionaryAPI(length) {
   try {
     const response = await fetch("https://random-words-api.kushcreates.com/api?language=en&type=lowercase&words=1");
     const data = await response.json();
-    let word = data[0].toLowerCase();
+    let word = data[0].word;
+    console.log(word);
 
     // retry until a word roughly matches the Banana API length
     if (Math.abs(word.length - length) > 2) {
