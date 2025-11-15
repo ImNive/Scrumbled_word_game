@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scrumbled Word Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="home-page" class="page active">
+
+      <div id="game-content" class="game-box">
+  <h1>Scrumbled Word</h1>
+  <p>Unscramble the letters and test your brain!</p>
+  <button id="start-btn">Start Game</button>
+</div>
+</div>
+    <div id="game-page" class="page">
+      <div class="top-bar">
+        <div class="right-info">
+  <span id="timer">⏳ Time: 30s</span>
+  </div>
+  <div class="left-info">
+  <span id="lives">❤️ Lives Left: 3</span>
+  <span id="skips">⏭️ Skips Left: 1</span>
+  </div>
+  </div>
+  <div id="game-content" class="game-box">
+   <h2>Unscramble the Word</h2>
+  <p id="scrambled-word">Loading...</p>
+  <input type="text" id="user-input" placeholder="Type your guess..." />
+  <button id="check-btn">Check</button>
+  <button id="skip-btn">Skip</button>
+  <p id="result"></p>
+  <p>Score: <span id="score">0</span></p>
+</div>
+</div>
+     <div id="end-page" class="page">
+      <div id="game-content" class="game-box">
+  <h2>Game Over!</h2>
+  <p>Your final score: <span id="final-score">0</span></p>
+  <button id="restart-btn">Play Again</button>
+</div>
+</div> 
+<script src="script.js"></script>
+</body>
+</html>

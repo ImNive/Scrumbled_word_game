@@ -1,0 +1,98 @@
+body {
+  background-color: #f2f2f2;
+  font-family: Poppins, sans-serif;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+button {
+  padding: 10px 25px;
+  border: none;
+  background-color: #3a86ff;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #265df2;
+}
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+/* Game page image */
+.game-img {
+  width: 200px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+/* End page image */
+.end-img {
+  width: 250px;
+  margin: 20px 0;
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;   /* left and right alignment */
+  padding: 15px 20px;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.left-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;       /* space between lives and skip */
+}
+
+.right-info {
+  font-size: 18px;
+}
+.game-box {
+  background: rgba(255, 255, 255, 0.75); /* white transparent */
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 420px;
+  margin-top: 20px;
+  backdrop-filter: blur(4px); /* optional: glass effect */
+}
+
+/* Optional: different background images for each page */
+#home-page {
+  background-image: url("images/home-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#game-page {
+  background-image: url("images/game-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+#end-page {
+  background-image: url("images/end-bg.jpg");
+  background-size: cover;
+  background-position: center;
+}
