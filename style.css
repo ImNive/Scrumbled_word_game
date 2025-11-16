@@ -31,23 +31,8 @@ button {
 button:hover {
   background-color: #265df2;
 }
-.logo {
-  width: 150px;
-  margin-bottom: 20px;
-}
 
-/* Game page image */
-.game-img {
-  width: 200px;
-  border-radius: 10px;
-  margin: 15px 0;
-}
 
-/* End page image */
-.end-img {
-  width: 250px;
-  margin: 20px 0;
-}
 
 .top-bar {
   width: 100%;
@@ -75,10 +60,10 @@ button:hover {
   width: 90%;
   max-width: 420px;
   margin-top: 20px;
-  backdrop-filter: blur(4px); /* optional: glass effect */
+  backdrop-filter: blur(4px); 
 }
 
-/* Optional: different background images for each page */
+
 #home-page {
   background-image: url("images/home-bg.jpg");
   background-size: cover;
